@@ -1,0 +1,21 @@
+nav{display:none;}
+
+ul{padding:0;}
+
+a{
+	text-decoration:none;
+	color:black;
+}
+
+a:hover{color:green;}
+
+li{
+	list-style:none;
+	padding:none;
+}
+
+.block{
+	margin-top:15%;
+	text-align:center;
+	background-color:grey;
+}
