@@ -1,21 +1,54 @@
+*{font-family: 'Roboto Mono', monospace}
+h1,h2,h3,h4,h5,h6{font-family:'Cousine', monospace}
 nav{display:none;}
 
 ul{padding:0;}
+#bg-video{
+	position:fixed;
+	right: 0;
+	bottom:0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -1;
+}
 
 a{
+	font-family:'Share Tech Mono', monospace;
 	text-decoration:none;
 	color:black;
 }
 
-a:hover{color:green;}
+a:hover{text-decoration:underline;}
 
 li{
 	list-style:none;
 	padding:none;
 }
-
 .block{
-	margin-top:15%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh; 
+}
+
+.child-block{
 	text-align:center;
 	background-color:grey;
+	height:17em
+	width:22em;
+	max-width:500px;
+	padding:1em 1.5em;
+}
+
+.name-block{
+	margin-top: 1.5em;
+	padding-top: 1em;
+}
+
+.name-block h2,h1{
+	margin:0;
+}
+
+.nav-block{
+	padding-bottom: 1em;
 }
