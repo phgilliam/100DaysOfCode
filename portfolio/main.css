@@ -18,7 +18,10 @@ a{
 	color:black;
 }
 
-a:hover{text-decoration:underline;}
+a:hover{
+text-decoration:underline;
+color:#b724b0;
+}
 
 li{
 	list-style:none;
@@ -51,4 +54,13 @@ li{
 
 .nav-block{
 	padding-bottom: 1em;
+/*	display: none; */
 }
+
+
+/********************/
+/* Blog & Blog-roll */
+/********************/
+
+
+
