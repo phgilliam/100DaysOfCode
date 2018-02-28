@@ -1,5 +1,8 @@
 *{font-family: 'Roboto Mono', monospace}
-h1,h2,h3,h4,h5,h6{font-family:'Cousine', monospace}
+h1,h2,h3,h4,h5,h6{
+	font-family:'Cousine', monospace;
+	margin:0;
+}
 /*nav{display:none;}*/
 
 ul{padding:0;}
@@ -48,9 +51,6 @@ li{
 	padding-top: 1em;
 }
 
-.name-block h2,h1{
-	margin:0;
-}
 
 .nav-block{
 	padding-bottom: 1em;
@@ -67,4 +67,17 @@ li{
 	max-width:45em;
 }
 
-nav ul li{display:inline-block}
+nav ul li{
+	display:inline-block;
+	margin: 0 0.25em
+}
+
+nav ul{
+	margin:0;
+}
+
+.header-class{
+	margin: 3em 0 2em 0;
+	text-align:center;
+	width:100%;
+}
