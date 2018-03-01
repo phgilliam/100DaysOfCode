@@ -3,7 +3,10 @@ h1,h2,h3,h4,h5,h6{
 	font-family:'Cousine', monospace;
 	margin:0;
 }
-/*nav{display:none;}*/
+.hide{display:none;}
+body{font:100%/1.5;}
+
+@-moz-viewport{width:device-width}
 
 ul{padding:0;}
 #bg-video{
@@ -39,8 +42,9 @@ li{
 
 .child-block{
 	text-align:center;
-	background-color:grey;
-	height:17em
+	background-color:#423b3f;
+	color:#87785e;
+	/*height:17em;*/
 	width:22em;
 	max-width:500px;
 	padding:1em 1.5em;
@@ -62,6 +66,11 @@ li{
 /* Blog & Blog-roll */
 /********************/
 
+.blog{
+	background-color:#423b3f;
+	color:#877961;
+}
+
 .middle{
 	margin: 0 auto;
 	max-width:45em;
@@ -69,15 +78,45 @@ li{
 
 nav ul li{
 	display:inline-block;
-	margin: 0 0.25em
+	margin: 0 .25em
 }
 
 nav ul{
 	margin:0;
 }
 
+.article-title, .article-date{
+	color:#4c4540;
+	background-color:#845270;
+	padding-left:0.5em
+}
+
+.article-title{padding-top: 0.25em;}
+.article-date{padding-bottom:0.25em;}
+.article-text{padding:0 .5em}
 .header-class{
 	margin: 3em 0 2em 0;
 	text-align:center;
 	width:100%;
 }
+
+.blog-links ul li a, .read-more{color: #1d6d44}
+
+
+/****Media Queries****/
+
+@media only screen and (max-width:720px){
+	body{
+		font-size: 14px;
+		background:url('/video/ink.jpg');
+	}
+	#bg-video{
+		display:none;
+	}
+	a{
+		font-size:1.4em;
+		margin:0.75em 0;
+	}
+
+}
+
