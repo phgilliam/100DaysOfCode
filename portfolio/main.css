@@ -1,4 +1,7 @@
-*{font-family: 'Roboto Mono', monospace}
+*{
+font-family: 'Roboto Mono', monospace;
+margin:0;
+}
 h1,h2,h3,h4,h5,h6{
 	font-family:'Cousine', monospace;
 	margin:0;
@@ -6,7 +9,7 @@ h1,h2,h3,h4,h5,h6{
 .hide{display:none;}
 body{font:100%/1.5;}
 
-@-moz-viewport{width:device-width}
+@-moz-viewport{width:device-width;}
 
 ul{padding:0;}
 #bg-video{
@@ -104,11 +107,20 @@ nav ul{
 
 
 /****Media Queries****/
-
+@media only screen and (max-width:320px){
+	.index{
+		font-size:12px;
+	}
+	.middle{width:100vw;}	
+	
+}
 @media only screen and (max-width:720px){
-	body{
-		font-size: 14px;
-		background:url('/video/ink.jpg');
+	.index{
+		background:url('../video/ink.jpg');
+	}
+	.middle{
+		width:100vw;
+		margin:0 2em;
 	}
 	#bg-video{
 		display:none;
@@ -117,6 +129,14 @@ nav ul{
 		font-size:1.4em;
 		margin:0.75em 0;
 	}
+
+	.article-title, .article-date{
+		padding-left:1em;
+		padding-right: 1em;
+	}
+
+	.article-title{font-size:1.1em;}
+	.article-date{font-size:.9em;}
 
 }
 
