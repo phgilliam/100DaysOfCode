@@ -7,3 +7,16 @@ def factor(num):
     return li
 
 print(factor(100))
+
+while True:
+    try:
+        x = input('Enter a number to factor: ')
+        x = int(x)
+    except ValueError:
+        print('Please enter an integer!')
+        continue
+    else:
+        break
+
+
+print(factor(x))
