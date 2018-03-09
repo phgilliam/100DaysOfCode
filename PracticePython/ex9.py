@@ -9,11 +9,14 @@ while inp != 'e':
         if inp == 'e':
             break
         elif int(inp) < x:
-            print('Too Low')
+            guess += 1
+            print('Too Low, You\'ve made ' + str(guess) + ' guesses')
         elif int(inp) > x:
-            print('Too High')
+            guess += 1
+            print('Too High, You\'ve made ' + str(guess) + ' guesses')
         elif int(inp) == x:
-            print('Nailed it')
+            guess += 1
+            print('Nailed it in ' + str(guess) + ' guesses')
             break
         else:
             print('That is not an accepted value')
