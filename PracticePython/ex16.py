@@ -1,6 +1,6 @@
 import random
 
-lines = [line.rstrip('\n') for line in open('engmix.txt')]
+lines = [line.rstrip('\n') for line in open('.engmix.txt')]
 a = random.randint(0,84099)
 b = random.randint(0,84099)
 c = random.randint(1,1000)
